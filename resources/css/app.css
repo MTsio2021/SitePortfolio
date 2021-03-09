@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes bounceOrig {
+
+    0%,
+    100% {
+        transform: none;
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    50% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+}
+
+.hover\:bounceOrig:hover {
+    animation: bounceOrig 1s infinite;
+
+}
+
+.toggle-label {
+
+    position: relative;
+}
+
+.toggle-label:before {
+
+    position: absolute;
+    top: 0.125rem;
+    left: 0.125rem;
+
+    display: block;
+    content: "";
+
+
+    width: 1.25rem;
+    height: 1.25rem;
+
+    border-radius: 9999%;
+
+
+    background-color: #E5E7EB;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-size: 40%;
+
+
+    transition: transform .15s cubic-bezier(0, 0, 0.2, 1);
+
+
+    transform: translateX(0);
+
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+
+.toggle-checkbox:checked+.toggle-label:before {
+
+    transform: translateX(1.5rem);
+}
