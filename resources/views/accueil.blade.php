@@ -115,9 +115,10 @@ Accueil
             class=" transition duration-500 grid lg:grid-flow-col lg:grid-cols-3 py-3 bg-gray-200 shadow-lightSw dark:bg-gray-600 dark:shadow-darkSw border-2 rounded-xl border-gray-700 dark:border-gray-300">
             <div class="grid grid-flow-row col-span-2 px-3">
                 <div class="">
-                    <h6 class="transition duration-500 text-2xl text-green-500 dark:text-yellow-500 font-bold">Qui
+                    <h6 data-aos="fade-down"
+                        class="transition duration-500 text-2xl text-green-500 dark:text-yellow-500 font-bold">Qui
                         suis-je ?</h6>
-                    <div class="py-6">
+                    <div data-aos="fade-right" class="py-6">
                         <p class="transition duration-500 text-justify text-gray-800 dark:text-gray-200">Je m'appel
                             <span class="transition duration-500 text-green-500 dark:text-yellow-400">Mathieu
                                 Tillier</span>,
@@ -132,7 +133,7 @@ Accueil
                                 class="transition duration-500 text-green-500 dark:text-yellow-400">Lycée Polyvalent de
                                 Cachan</span> (94230).</p>
                     </div>
-                    <div class="">
+                    <div data-aos="fade-right" class="">
                         <p class="transition duration-500 text-gray-800 dark:text-gray-200 ">Je m'appel Mathieu Tillier,
                             étudiant en
                             deuxième
@@ -143,8 +144,8 @@ Accueil
 
             </div>
             <div class="grid grid-flow-row px-2">
-                <div class="flex justify-end items-center py-3  sm:pl-32 lg:pl-0 lg:py-0">
-                    <img class="transition duration-500 border-4 rounded-lg border-green-500 dark:border-yellow-500  h-56 w-auto  xl:h-80 "
+                <div data-aos="flip-left" class="flex justify-end items-center py-3 sm:pl-28 lg:pl-0 lg:py-0">
+                    <img class="transition duration-500 border-4 rounded-lg border-green-500 dark:border-yellow-500  h-48 w-auto  xl:h-80 "
                         src="{{ asset('images/icon-logo/moi.jpg') }}" alt="">
                 </div>
             </div>

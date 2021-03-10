@@ -9,7 +9,7 @@
             <!-- logo -->
 
             <div>
-                <a href="/" class="flex items-center py-1 px-2">
+                <a href="/#" class="flex items-center py-1 px-2">
                     <img class="h-16 w-auto mr-2 transform" src="{{ asset('images/icon-logo/logo.png') }}" alt="Logo">
                     <span class="transition duration-500 font-bold text-gray-800 dark:text-gray-200">Mathieu
                         Tillier</span>
@@ -23,22 +23,22 @@
                 <!-- primary nav -->
 
                 <div class="hidden lg:flex items-center p-auto">
-                    <a href="#apropos"
-                        class="transition duration-700  mx-2 rounded-xl py-2 px-3 text-gray-800 hover:bounceOrig dark:text-gray-200 hover:text-green-500 dark:hover:text-yellow-400">A
+                    <a href="/#apropos"
+                        class="transition duration-500  mx-2 rounded-xl py-2 px-3 text-gray-800 hover:bounceOrig dark:text-gray-200 hover:text-green-500 dark:hover:text-yellow-400">A
                         propos de
                         moi</a>
                     <p class="transition duration-500 text-gray-600 font-bold dark:text-gray-200">|</p>
                     <a href="#"
-                        class="transition duration-700  mx-2 rounded-xl py-2 px-3 text-gray-800 hover:bounceOrig dark:text-gray-200 hover:text-green-500 dark:hover:text-yellow-400">Parcours</a>
+                        class="transition duration-500  mx-2 rounded-xl py-2 px-3 text-gray-800 hover:bounceOrig dark:text-gray-200 hover:text-green-500 dark:hover:text-yellow-400">Parcours</a>
                     <p class="transition duration-500 text-gray-600 font-bold dark:text-gray-200">|</p>
                     <a href="#"
-                        class="transition duration-700  mx-2 rounded-xl py-2 px-3 text-gray-800 hover:bounceOrig dark:text-gray-200 hover:text-green-500 dark:hover:text-yellow-400">Réalisations</a>
+                        class="transition duration-500  mx-2 rounded-xl py-2 px-3 text-gray-800 hover:bounceOrig dark:text-gray-200 hover:text-green-500 dark:hover:text-yellow-400">Réalisations</a>
                     <p class="transition duration-500 text-gray-600 font-bold dark:text-gray-200">|</p>
                     <a href="#"
-                        class="transition duration-700  mx-2 rounded-xl py-2 px-3 text-gray-800 hover:bounceOrig dark:text-gray-200 hover:text-green-500 dark:hover:text-yellow-400">Veilles</a>
+                        class="transition duration-500  mx-2 rounded-xl py-2 px-3 text-gray-800 hover:bounceOrig dark:text-gray-200 hover:text-green-500 dark:hover:text-yellow-400">Veilles</a>
                     <p class="transition duration-500 text-gray-600 font-bold dark:text-gray-200">|</p>
                     <a href="/contact"
-                        class="transition duration-700  mx-2 rounded-xl py-2 px-3 text-gray-800 hover:bounceOrig dark:text-gray-200 hover:text-green-500 dark:hover:text-yellow-400">Contact</a>
+                        class="transition duration-500  mx-2 rounded-xl py-2 px-3 text-gray-800 hover:bounceOrig dark:text-gray-200 hover:text-green-500 dark:hover:text-yellow-400">Contact</a>
                 </div>
 
 
@@ -145,4 +145,8 @@
 
     toggleSwitch.addEventListener('change', switchTheme, false);
    
+</script>
+
+<script>
+
 </script>
