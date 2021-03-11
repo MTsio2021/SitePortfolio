@@ -17,6 +17,7 @@
 
     @yield('content')
 
+
     <script>
         AOS.init();
     </script>
