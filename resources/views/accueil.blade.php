@@ -11,7 +11,7 @@ Accueil
 
 <section>
     <div
-        class="transition duration-500 relative min-h-screen flex items-center justify-center bg-gray-400 dark:bg-gray-900 overflow-hidden border-b-4 border-gray-700">
+        class="transition duration-500 relative min-h-screen flex items-center justify-center bg-gray-400 dark:bg-gray-900 overflow-hidden border-b-4 border-gray-700 dark:border-gray-500">
 
         <!-- grid background -->
         <div class="grid-background absolute inset-0 p-2 grid grid-cols-12 gap-2 transform -skew-y-12 scale-125">
@@ -114,10 +114,11 @@ Accueil
 
 <section id="apropos">
 
-    <div class="grid grid-cols-6 transition duration-500 py-20 bg-gray-400 dark:bg-gray-900">
+    <div
+        class="grid grid-cols-6 transition duration-500 py-20  bg-gray-400 dark:bg-gray-900 border-b-4 border-gray-500 dark:border-gray-700">
         <!-- Global div -->
 
-        <div data-aos="flip-up" class="col-start-2 col-span-4 mx-auto flex justify-center pb-10 ">
+        <div data-aos="flip-up" class="col-start-2 col-span-4 mx-auto pt-10 flex justify-center pb-10 ">
 
             <!--  Info Div -->
 
@@ -131,12 +132,12 @@ Accueil
 
                     <div class="">
 
-                        <!-- Title  -->
-                        <h6 data-aos="fade-down"
+                        <!-- Title 1  -->
+                        <h5 data-aos="fade-down"
                             class="transition duration-500 text-2xl text-green-500 dark:text-yellow-500 font-bold">
                             Qui suis-je ?
-                        </h6>
-                        <!-- End Title  -->
+                        </h5>
+                        <!-- End Title 1  -->
 
                         <!-- Paragraph 1 -->
                         <div data-aos="fade-right" class="py-6">
@@ -159,14 +160,24 @@ Accueil
                         </div>
                         <!-- End Paragraph 1  -->
 
+                        <!-- Title 2  -->
+                        <h5 data-aos="fade-down"
+                            class=" text-2xl transition duration-500 text-green-500 dark:text-yellow-500 font-bold">
+                            Mon projet ?
+                        </h5>
+                        <!-- End Title 2  -->
+
                         <!-- Paragraph 2  -->
-                        <div data-aos="fade-right" class="">
-                            <p class="transition duration-500 text-gray-800 dark:text-gray-200 ">Je m'appel Mathieu
-                                Tillier,
-                                étudiant en
-                                deuxième
-                                année de BTS SIO (Servies Informatiques aux Organisations), option SLAM (Solutions
-                                Logicielles et Application Métier), l'option spécialisée dans le développement.</p>
+                        <div data-aos="fade-right" class="py-6">
+                            <p class="transition duration-500 text-justify text-gray-800 dark:text-gray-200">Je compte
+                                poursuivre
+                                mes études après mon BTS, en alternance, en développement dans le domaine du <span
+                                    class="transition duration-500 text-green-500 dark:text-yellow-400">web.</span>
+                                J'aimerai à terme devenir un <span
+                                    class="transition duration-500 text-green-500 dark:text-yellow-400">développeur web
+                                    full-stack</span> ou <span
+                                    class="transition duration-500 text-green-500 dark:text-yellow-400">front-end.</span>
+                            </p>
                         </div>
                         <!-- End Paragraph 2  -->
                     </div>
@@ -180,7 +191,7 @@ Accueil
 
                 <div class="grid grid-flow-row px-2">
                     <div data-aos="flip-left" class="flex justify-end items-center py-3 sm:pl-28 lg:pl-0 lg:py-0">
-                        <img class="transition duration-500 border-4 rounded-lg border-green-500 dark:border-yellow-500  h-48 w-auto  xl:h-80 "
+                        <img class="transition duration-500 border-4 rounded-lg border-green-500 dark:border-yellow-500  h-48 w-auto  xl:h-80 transform xl:rotate-12"
                             src="{{ asset('images/icon-logo/moi.jpg') }}" alt="">
                     </div>
                 </div>
@@ -203,8 +214,89 @@ Accueil
 
 <section>
 
-    <div>
-        test
+    <div
+        class="transition duration-500 bg-gray-300 py-20 dark:bg-gray-800 border-b-4 border-gray-700 dark:border-gray-500">
+
+        <!-- Global Div -->
+        <div class="grid grid-rows-3 gap-10 mx-auto max-w-screen-sm lg:max-w-screen-lg xl:max-w-screen-xl ">
+
+            <!-- Header -->
+            <div class="transition duration-500 py-3 border-b-2 border-green-500 dark:border-yellow-500">
+                <!-- Title -->
+                <h5 class="text-4xl font-bold text-center transition duration-500 text-green-500 dark:text-yellow-500">
+                    ════ Mon parcours ════
+                </h5>
+                <!-- End Title -->
+            </div>
+            <!-- End Header -->
+
+            <!-- Infos -->
+
+            <div class="grid grid-cols-2">
+
+                <!-- Col 1 -->
+
+                <div class="grid grid-rows-2 border border-red-200">
+
+                    <!-- Row 1 -->
+
+                    <div
+                        class="transition duration-500 text-center border-b-2 border-green-500 dark:border-yellow-500 mx-10">
+                        <h5 class="text-2xl font-bold transition duration-500 text-green-500 dark:text-yellow-500">
+                            Formations
+                        </h5>
+                    </div>
+
+                    <!-- End Row 1 -->
+
+                    <!-- Row 2 -->
+
+                    <div>
+
+                    </div>
+
+                    <!-- End Row 2 -->
+
+                </div>
+
+                <!-- End Col 1 -->
+
+                <!-- Col 2 -->
+
+                <div class="grid grid-rows-2 border border-red-200">
+
+                    <!-- Row 1 -->
+
+                    <div
+                        class="transition duration-500 text-center border-b-2 border-green-500 dark:border-yellow-500 mx-10">
+
+                        <h5 class="text-2xl font-bold transition duration-500 text-green-500 dark:text-yellow-500">
+                            Expériences Professionnelles</h5>
+
+                    </div>
+
+                    <!-- End Row 1 -->
+
+                    <!-- Row 2 -->
+
+                    <div>
+
+                    </div>
+
+                    <!-- End Row 2 -->
+
+                </div>
+
+                <!-- End Col 2 -->
+
+            </div>
+
+            <!-- End Infos -->
+            <div class="border border-red-200">
+                3
+            </div>
+        </div>
+
     </div>
 
 </section>
