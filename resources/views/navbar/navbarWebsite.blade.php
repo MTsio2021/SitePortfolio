@@ -11,7 +11,7 @@
             <div>
                 <a href="/#" class="flex items-center py-1 px-2">
 
-                    <svg class="transition duration-500 h-14 w-auto text-gray-900 dark:text-gray-200 mr-3"
+                    <svg class="transition duration-500 h-14 w-auto text-green-500 dark:text-yellow-500 mr-3"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3100 2433" stroke="currentColor"
                         fill="currentColor">
                         <path stroke-width="2" d="M 2325.38,821.04
