@@ -59,12 +59,14 @@ Accueil
             <div class="relative row-span-3 col-span-2 text-center">
                 <h2 class=" transition duration-500 text-4xl text-gray-700 dark:text-gray-200 font-extrabold">Bienvenue
                     sur
-                    mon <span class="transition duration-500 text-green-500 dark:text-yellow-500">Portfolio.</span></h2>
+                    mon <span class="transition duration-500 text-indigo-600 dark:text-yellow-500">Portfolio.</span>
+                </h2>
                 <p class=" transition duration-500 text-3xl text-gray-700 dark:text-gray-200 py-3 font-bold">
                     Vous y trouverez mes <span
-                        class="transition duration-500 text-green-500 dark:text-yellow-500">projets réalisés</span>, mon
-                    <span class="transition duration-500 text-green-500 dark:text-yellow-500">CV</span>, mes<span
-                        class="transition duration-500 text-green-500 dark:text-yellow-500"> veilles</span> et plus
+                        class="transition duration-500 text-indigo-600 dark:text-yellow-500">projets réalisés</span>,
+                    mon
+                    <span class="transition duration-500 text-indigo-600 dark:text-yellow-500">CV</span>, mes<span
+                        class="transition duration-500 text-indigo-600 dark:text-yellow-500"> veilles</span> et plus
                     encore !
                 </p>
             </div>
@@ -134,7 +136,7 @@ Accueil
 
                         <!-- Title 1  -->
                         <h5 data-aos="fade-down"
-                            class="transition duration-500 text-2xl text-green-500 dark:text-yellow-500 font-bold">
+                            class="transition duration-500 text-2xl text-indigo-600 dark:text-yellow-500 font-bold">
                             Qui suis-je ?
                         </h5>
                         <!-- End Title 1  -->
@@ -143,17 +145,18 @@ Accueil
                         <div data-aos="fade-right" class="py-6">
                             <p class="transition duration-500 text-justify text-gray-800 dark:text-gray-200">
                                 Je m'appel
-                                <span class="transition duration-500 text-green-500 dark:text-yellow-400">Mathieu
+                                <span class="transition duration-500 text-indigo-600 dark:text-yellow-400">Mathieu
                                     Tillier</span>,
                                 étudiant en
                                 deuxième
-                                année de <span class="transition duration-500 text-green-500 dark:text-yellow-400">BTS
+                                année de <span class="transition duration-500 text-indigo-600 dark:text-yellow-400">BTS
                                     SIO</span> (Servies Informatiques aux Organisations), option <span
-                                    class="transition duration-500 text-green-500 dark:text-yellow-400">SLAM</span>
+                                    class="transition duration-500 text-indigo-600 dark:text-yellow-400">SLAM</span>
                                 (Solutions
                                 Logicielles et Application Métier), l'option spécialisée dans le développement. J'ai
                                 effectué ce BTS au <span
-                                    class="transition duration-500 text-green-500 dark:text-yellow-400">Lycée Polyvalent
+                                    class="transition duration-500 text-indigo-600 dark:text-yellow-400">Lycée
+                                    Polyvalent
                                     de
                                     Cachan</span> (94230).
                             </p>
@@ -162,7 +165,7 @@ Accueil
 
                         <!-- Title 2  -->
                         <h5 data-aos="fade-down"
-                            class=" text-2xl transition duration-500 text-green-500 dark:text-yellow-500 font-bold">
+                            class=" text-2xl transition duration-500 text-indigo-600 dark:text-yellow-500 font-bold">
                             Mon projet ?
                         </h5>
                         <!-- End Title 2  -->
@@ -172,11 +175,11 @@ Accueil
                             <p class="transition duration-500 text-justify text-gray-800 dark:text-gray-200">Je compte
                                 poursuivre
                                 mes études après mon BTS, en alternance, en développement dans le domaine du <span
-                                    class="transition duration-500 text-green-500 dark:text-yellow-400">web.</span>
+                                    class="transition duration-500 text-indigo-600 dark:text-yellow-400">web.</span>
                                 J'aimerai à terme devenir un <span
-                                    class="transition duration-500 text-green-500 dark:text-yellow-400">développeur web
+                                    class="transition duration-500 text-indigo-600 dark:text-yellow-400">développeur web
                                     full-stack</span> ou <span
-                                    class="transition duration-500 text-green-500 dark:text-yellow-400">front-end.</span>
+                                    class="transition duration-500 text-indigo-600 dark:text-yellow-400">front-end.</span>
                             </p>
                         </div>
                         <!-- End Paragraph 2  -->
@@ -191,7 +194,7 @@ Accueil
 
                 <div class="grid grid-flow-row px-2">
                     <div data-aos="flip-left" class="flex justify-end items-center py-3 sm:pl-28 lg:pl-0 lg:py-0">
-                        <img class="transition duration-500 border-4 rounded-lg border-green-500 dark:border-yellow-500  h-48 w-auto  xl:h-80 transform xl:rotate-12"
+                        <img class="transition duration-500 border-4 rounded-lg border-indigo-600 dark:border-yellow-500  h-48 w-auto  xl:h-80 transform xl:rotate-12"
                             src="{{ asset('images/icon-logo/moi.jpg') }}" alt="">
                     </div>
                 </div>
@@ -215,15 +218,17 @@ Accueil
 <section>
 
     <div
-        class="transition duration-500 bg-gray-300 py-20 dark:bg-gray-800 border-b-4 border-gray-700 dark:border-gray-500">
+        class="transition duration-500 bg-gray-300 py-20 dark:bg-gray-800 border-b-4 border-gray-700 dark:border-gray-500 px-10">
 
         <!-- Global Div -->
-        <div class="grid grid-rows-3 gap-10 mx-auto max-w-screen-sm lg:max-w-screen-lg xl:max-w-screen-xl ">
+        <div class="gap-10 mx-auto max-w-screen-sm lg:max-w-screen-lg xl:max-w-screen-xl">
 
             <!-- Header -->
-            <div class="transition duration-500 py-3 border-b-2 border-green-500 dark:border-yellow-500">
+            <div data-aos="zoom-in-down"
+                class="transition duration-500 border-b-2 flex justify-center border-indigo-600 dark:border-yellow-500">
                 <!-- Title -->
-                <h5 class="text-4xl font-bold text-center transition duration-500 text-green-500 dark:text-yellow-500">
+                <h5
+                    class="py-5 text-2xl lg:text-4xl font-bold transition duration-500 text-indigo-600 dark:text-yellow-500">
                     ════ Mon parcours ════
                 </h5>
                 <!-- End Title -->
@@ -232,17 +237,18 @@ Accueil
 
             <!-- Infos -->
 
-            <div class="grid grid-cols-2">
+            <div class="grid lg:grid-cols-2 py-5 gap-5">
 
                 <!-- Col 1 -->
 
-                <div class="grid grid-rows-2 border border-red-200">
+                <div>
 
                     <!-- Row 1 -->
 
-                    <div
-                        class="transition duration-500 text-center border-b-2 border-green-500 dark:border-yellow-500 mx-10">
-                        <h5 class="text-2xl font-bold transition duration-500 text-green-500 dark:text-yellow-500">
+                    <div data-aos="fade-right"
+                        class="transition duration-500 flex justify-center border-b-2 py-5 border-indigo-600 dark:border-yellow-500 mx-10">
+                        <h5
+                            class="my-auto lg:text-2xl font-bold transition duration-500 text-indigo-600 dark:text-yellow-500">
                             Formations
                         </h5>
                     </div>
@@ -251,7 +257,24 @@ Accueil
 
                     <!-- Row 2 -->
 
-                    <div>
+                    <div data-aos="fade-right" class="ml-10 py-3">
+
+                        @foreach ($formations as $formation)
+
+                        <div data-aos="fade-right" class="pb-2">
+
+                            <p class="transition duration-500 font-bold text-gray-700 text-xl dark:text-gray-200">
+                                -
+                                {{ $formation->name }} |
+                                {{$formation->etablishment}} |
+                                {{$formation->city}}</p>
+
+                            <p class="ml-3 transition duration-500 text-gray-700 dark:text-gray-200">
+                                {{$formation->date}}</p>
+
+                        </div>
+
+                        @endforeach
 
                     </div>
 
@@ -263,14 +286,15 @@ Accueil
 
                 <!-- Col 2 -->
 
-                <div class="grid grid-rows-2 border border-red-200">
+                <div>
 
                     <!-- Row 1 -->
 
-                    <div
-                        class="transition duration-500 text-center border-b-2 border-green-500 dark:border-yellow-500 mx-10">
+                    <div data-aos="fade-left"
+                        class="transition duration-500 flex justify-center border-b-2 py-5 border-indigo-600 dark:border-yellow-500 mx-10">
 
-                        <h5 class="text-2xl font-bold transition duration-500 text-green-500 dark:text-yellow-500">
+                        <h5
+                            class="my-auto lg:text-2xl font-bold transition duration-500 text-indigo-600 dark:text-yellow-500">
                             Expériences Professionnelles</h5>
 
                     </div>
@@ -279,8 +303,15 @@ Accueil
 
                     <!-- Row 2 -->
 
-                    <div>
-
+                    <div class="ml-10 py-3">
+                        @foreach ($formations as $formation)
+                        <div data-aos="fade-left" class="pb-2">
+                            <p class="font-bold text-gray-800 dark:text-gray-200">
+                                {{ $formation->name }} |
+                                {{$formation->city}}</p>
+                            <p>{{$formation->date}}</p>
+                        </div>
+                        @endforeach
                     </div>
 
                     <!-- End Row 2 -->
@@ -290,11 +321,7 @@ Accueil
                 <!-- End Col 2 -->
 
             </div>
-
             <!-- End Infos -->
-            <div class="border border-red-200">
-                3
-            </div>
         </div>
 
     </div>

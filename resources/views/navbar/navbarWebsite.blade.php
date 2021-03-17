@@ -11,7 +11,7 @@
             <div>
                 <a href="/#" class="flex items-center py-1 px-2">
 
-                    <svg class="transition duration-500 h-14 w-auto text-green-500 dark:text-yellow-500 mr-3"
+                    <svg class="transition duration-500 h-14 w-auto text-indigo-600 dark:text-yellow-500 mr-3"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3100 2433" stroke="currentColor"
                         fill="currentColor">
                         <path stroke-width="2" d="M 2325.38,821.04
@@ -275,21 +275,21 @@
 
                 <div class="hidden lg:flex items-center p-auto">
                     <a href="/#apropos"
-                        class="transition duration-500  mx-2 rounded-xl py-2 px-3 text-gray-800 hover:bounceOrig dark:text-gray-200 hover:text-green-500 dark:hover:text-yellow-400">A
+                        class="transition duration-500  mx-2 rounded-xl py-2 px-3 text-gray-800 hover:bounceOrig dark:text-gray-200 hover:text-indigo-600 dark:hover:text-yellow-400">A
                         propos de
                         moi</a>
                     <p class="transition duration-500 text-gray-600 font-bold dark:text-gray-200">|</p>
                     <a href="#"
-                        class="transition duration-500  mx-2 rounded-xl py-2 px-3 text-gray-800 hover:bounceOrig dark:text-gray-200 hover:text-green-500 dark:hover:text-yellow-400">Parcours</a>
+                        class="transition duration-500  mx-2 rounded-xl py-2 px-3 text-gray-800 hover:bounceOrig dark:text-gray-200 hover:text-indigo-600 dark:hover:text-yellow-400">Parcours</a>
                     <p class="transition duration-500 text-gray-600 font-bold dark:text-gray-200">|</p>
                     <a href="#"
-                        class="transition duration-500  mx-2 rounded-xl py-2 px-3 text-gray-800 hover:bounceOrig dark:text-gray-200 hover:text-green-500 dark:hover:text-yellow-400">Réalisations</a>
+                        class="transition duration-500  mx-2 rounded-xl py-2 px-3 text-gray-800 hover:bounceOrig dark:text-gray-200 hover:text-indigo-600 dark:hover:text-yellow-400">Réalisations</a>
                     <p class="transition duration-500 text-gray-600 font-bold dark:text-gray-200">|</p>
                     <a href="#"
-                        class="transition duration-500  mx-2 rounded-xl py-2 px-3 text-gray-800 hover:bounceOrig dark:text-gray-200 hover:text-green-500 dark:hover:text-yellow-400">Veilles</a>
+                        class="transition duration-500  mx-2 rounded-xl py-2 px-3 text-gray-800 hover:bounceOrig dark:text-gray-200 hover:text-indigo-600 dark:hover:text-yellow-400">Veilles</a>
                     <p class="transition duration-500 text-gray-600 font-bold dark:text-gray-200">|</p>
                     <a href="/contact"
-                        class="transition duration-500  mx-2 rounded-xl py-2 px-3 text-gray-800 hover:bounceOrig dark:text-gray-200 hover:text-green-500 dark:hover:text-yellow-400">Contact</a>
+                        class="transition duration-500  mx-2 rounded-xl py-2 px-3 text-gray-800 hover:bounceOrig dark:text-gray-200 hover:text-indigo-600 dark:hover:text-yellow-400">Contact</a>
                 </div>
 
 
