@@ -279,10 +279,10 @@
                         propos de
                         moi</a>
                     <p class="transition duration-500 text-gray-600 font-bold dark:text-gray-200">|</p>
-                    <a href="#"
+                    <a href="/#parcours"
                         class="transition duration-500  mx-2 rounded-xl py-2 px-3 text-gray-800 hover:bounceOrig dark:text-gray-200 hover:text-indigo-600 dark:hover:text-yellow-400">Parcours</a>
                     <p class="transition duration-500 text-gray-600 font-bold dark:text-gray-200">|</p>
-                    <a href="#"
+                    <a href="/#realisation"
                         class="transition duration-500  mx-2 rounded-xl py-2 px-3 text-gray-800 hover:bounceOrig dark:text-gray-200 hover:text-indigo-600 dark:hover:text-yellow-400">Réalisations</a>
                     <p class="transition duration-500 text-gray-600 font-bold dark:text-gray-200">|</p>
                     <a href="#"
@@ -342,11 +342,13 @@
     </div>
     <!-- mobile menu-->
     <div class="mobile-menu hidden lg:hidden">
-        <a href="#apropos" class="block transition duration-500 py-2 px-4 text-gray-800 dark:text-gray-200">A propos de
+        <a href="/#apropos" class="block transition duration-500 py-2 px-4 text-gray-800 dark:text-gray-200">A propos de
             moi</a>
 
-        <a href="#" class="block transition duration-500 py-2 px-4 text-gray-800 dark:text-gray-200 ">Parcours</a>
-        <a href="#" class="block transition duration-500 py-2 px-4 text-gray-800 dark:text-gray-200">Réalisations</a>
+        <a href="/#parcours"
+            class="block transition duration-500 py-2 px-4 text-gray-800 dark:text-gray-200 ">Parcours</a>
+        <a href="/#realisation"
+            class="block transition duration-500 py-2 px-4 text-gray-800 dark:text-gray-200">Réalisations</a>
 
         <a href="#" class="block transition duration-500 py-2 px-4 text-gray-800 dark:text-gray-200">Veilles</a>
         <a href="#" class="block transition duration-500 py-2 px-4 text-gray-800 dark:text-gray-200">Contact</a>
