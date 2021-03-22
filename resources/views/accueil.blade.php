@@ -228,7 +228,7 @@ Accueil
         class="grid grid-cols-6 transition duration-500 bg-gray-300 py-20 dark:bg-gray-800 border-b-4 border-gray-700 dark:border-gray-500 lg:px-10">
 
         <!-- Global Div -->
-        <div class="mx-auto col-start-2 col-span-4 max-w-screen-sm lg:max-w-screen-lg xl:max-w-screen-xl">
+        <div class="mx-auto col-start-2 col-span-4 lg:max-w-screen-lg xl:max-w-screen-xl">
 
             <!-- Header -->
             <div data-aos="fade-down">
@@ -357,7 +357,7 @@ Accueil
 
         <!-- Global div -->
 
-        <div class="mx-auto col-start-2 col-span-4 max-w-screen-sm lg:max-w-screen-lg xl:max-w-screen-xl">
+        <div class="mx-auto col-start-2 col-span-4 lg:max-w-screen-lg xl:max-w-screen-xl">
 
             <!-- Header -->
             <div data-aos="fade-down">
@@ -375,7 +375,7 @@ Accueil
 
             <!-- Projet -->
 
-            <div class="grid lg:grid-flow-col lg:grid-cols-3 gap-10 pt-10">
+            <div class="grid lg:grid-flow-col lg:grid-cols-2 2xl:grid-cols-3 gap-10 pt-10">
 
 
                 @foreach ($realisations as $realisation)
@@ -388,13 +388,13 @@ Accueil
 
                             <!-- 1 -->
                             <div data-aos="zoom-in" class="py-2">
-                                <img src=" {{ asset('images/projet/'.$realisation->image)}} " alt="">
+                                <img src=" {{ asset('images/projet/'.$realisation->image)}}" alt="">
                             </div>
 
                             <!-- 2 -->
                             <div data-aos="fade-down"
                                 class="transition duration-500 py-2 flex justify-center text-gray-800 dark:text-gray-200">
-                                <p class="font-bold lg:text-xl">══ {{ $realisation->title}} ══</p>
+                                <p class="font-bold lg:text-xl">{{ $realisation->title}}</p>
 
                             </div>
 
@@ -437,8 +437,10 @@ Accueil
 
                                         <a class="transition duration-500 text-gray-200 inline"
                                             href="{{ $realisation->linkgithub}}" target="blank"><img
-                                                class="h-5 w-auto inline" src="{{ asset('images/icon-logo/gitl.png')}}"
-                                                alt="">Github</a>
+                                                class="h-5 w-auto inline mr-0.5"
+                                                src="{{ asset('images/icon-logo/gitl.png')}}" alt=""><span
+                                                class="hidden 2xl:inline">Github</span><span
+                                                class="2xl:hidden">Git</span></a>
 
                                     </button>
                                     @else
@@ -446,9 +448,11 @@ Accueil
                                         class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 p-2 hover:bg-red-500 dark:hover:bg-red-500">
 
                                         <a class="transition duration-500 text-gray-200 inline" target="blank"><img
-                                                class="h-5 w-auto inline" src="{{ asset('images/icon-logo/gitl.png')}}"
-                                                alt="">
-                                            Github
+                                                class="h-5 w-auto inline mr-0.5"
+                                                src="{{ asset('images/icon-logo/gitl.png')}}" alt=""><span
+                                                class="hidden 2xl:inline">Github</span><span
+                                                class="2xl:hidden">Git</span>
+
                                         </a>
 
                                     </button>
