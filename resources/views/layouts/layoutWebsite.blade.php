@@ -1,4 +1,4 @@
-<html class="max-w-full">
+<html class="max-w-full overflow-x-hidden">
 
 <head>
     <meta charset="UTF-8" />
