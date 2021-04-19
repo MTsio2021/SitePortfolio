@@ -286,10 +286,7 @@
                         class="transition duration-500  mx-2 rounded-xl py-2 px-3 text-gray-800 hover:bounceOrig dark:text-gray-200 hover:text-indigo-600 dark:hover:text-yellow-400">Réalisations</a>
                     <p class="transition duration-500 text-gray-600 font-bold dark:text-gray-200">|</p>
                     <a href="/#veille"
-                        class="transition duration-500  mx-2 rounded-xl py-2 px-3 text-gray-800 hover:bounceOrig dark:text-gray-200 hover:text-indigo-600 dark:hover:text-yellow-400">Veille</a>
-                    <p class="transition duration-500 text-gray-600 font-bold dark:text-gray-200">|</p>
-                    <a href="/#contact"
-                        class="transition duration-500  mx-2 rounded-xl py-2 px-3 text-gray-800 hover:bounceOrig dark:text-gray-200 hover:text-indigo-600 dark:hover:text-yellow-400">Contact</a>
+                        class="transition duration-500  mx-2 rounded-xl py-2 px-3 text-gray-800 hover:bounceOrig dark:text-gray-200 hover:text-indigo-600 dark:hover:text-yellow-400">Veille</a>    
                 </div>
 
 

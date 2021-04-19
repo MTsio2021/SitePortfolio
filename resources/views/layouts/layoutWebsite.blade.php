@@ -10,7 +10,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    @include('navbar/navbarWebsite')
+    @include('navbarfooter/navbarWebsite')
 </head>
 
 <body class="bg-gray-300 dark:bg-gray-900">
@@ -25,5 +25,5 @@
 </body>
 
 <footer>
-    {{--  @include('footer') --}}
+    @include('navbarfooter/footerWebsite')
 </footer>

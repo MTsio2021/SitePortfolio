@@ -195,11 +195,17 @@ Accueil
                                     class="transition duration-500 text-indigo-600 dark:text-yellow-400">front-end.</span>
                             </p>
                             <div class="flex justify-center mt-5">
-                                <button
-                                class="transition duration-500 w-1/2 transform rounded-xl bg-indigo-600 dark:bg-yellow-600 hover:translate-x-2 p-2 dark:hover:bg-yellow-700 hover:bg-indigo-700">
-                            
-                                <a class="transition duration-500 text-gray-200 inline"
-                                    href="{{ asset('images/cv/cvmat.pdf') }}" target="blank">Consulter mon CV</a >
+
+                                <a class="transition duration-500 w-full text-gray-200"
+                                    href="{{ asset('images/cv/cvmat.pdf') }}" target="blank">
+
+                                    <button
+                                    class="transition duration-500 w-1/2 transform rounded-xl bg-indigo-600 dark:bg-yellow-600 hover:translate-x-2 p-2 dark:hover:bg-yellow-700 hover:bg-indigo-700">
+                                    Consulter mon CV
+                                    </button>
+                                    
+                                </a>
+                                    
                             </div>
                         </div>
                         <!-- End Paragraph 2  -->
@@ -380,7 +386,7 @@ Accueil
 
             <!-- Projet -->
 
-            <div class="grid lg:grid-flow-col 2xl:grid-cols-2 gap-10 pt-10">
+            <div class="grid lg:grid-flow-rows 2xl:grid-cols-2 gap-10 pt-10">
 
 
                 @foreach ($realisations as $realisation)
@@ -416,19 +422,21 @@ Accueil
                             </div>
 
                             <!-- 5 -->
-                            <div class="grid lg:grid-flow-col lg:grid-cols-3 gap-2 py-2">
+                            <div class="grid xl:grid-flow-col xl:grid-cols-3 gap-2 py-2">
 
                                 <!-- 1 -->
                                 <div data-aos="fade-right" class="flex justify-center">
                                     @if ($realisation->link)
-                                    <button
-                                        class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 hover:-translate-y-2 p-2">
 
-                                        <a class="transition duration-500 text-gray-200 inline"
-                                            href="{{ $realisation->link}}" target="blank"><img class="h-5 w-auto inline"
-                                                src="{{ asset('images/icon-logo/gitl.png')}}" alt="">Lien</a>
+                                    <a class="transition duration-500 text-gray-200 w-full"
+                                                                                    href="{{ $realisation->link}}" target="blank">
+                                        <button
+                                            class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 hover:-translate-y-2 p-2">
 
-                                    </button>
+                                            Lien
+
+                                        </button>
+                                    </a>
                                     @else
                                     <button
                                         class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 p-2 hover:bg-red-500 dark:hover:bg-red-500">
@@ -443,17 +451,20 @@ Accueil
                                 <!-- 2 -->
                                 <div data-aos="fade-up" class="flex justify-center">
                                     @if ($realisation->linkgithub)
-                                    <button
-                                        class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 hover:-translate-y-2 p-2">
 
-                                        <a class="transition duration-500 text-gray-200 inline"
-                                            href="{{ $realisation->linkgithub}}" target="blank"><img
-                                                class="h-5 w-auto inline mr-0.5"
-                                                src="{{ asset('images/icon-logo/gitl.png')}}" alt=""><span
-                                                class="hidden 2xl:inline">Github</span><span
-                                                class="2xl:hidden">Git</span></a>
+                                    <a class="transition duration-500 text-gray-200 w-full inline"
+                                                                                    href="{{ $realisation->linkgithub}}" target="blank"><img
+                                                                                        class="h-5 w-auto inline mr-0.5"
+                                                                                        src="{{ asset('images/icon-logo/gitl.png')}}" alt="">
+                                        <button
+                                            class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 hover:-translate-y-2 p-2">
 
-                                    </button>
+                                            <span
+                                                    class="hidden 2xl:inline">Github</span><span
+                                                    class="2xl:hidden">Git</span>
+
+                                        </button>
+                                    </a>
                                     @else
                                     <button
                                         class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 p-2 hover:bg-red-500 dark:hover:bg-red-500">
@@ -473,16 +484,16 @@ Accueil
                                 <!-- 3 -->
                                 <div data-aos="fade-left" class="flex justify-center">
                                     @if ($realisation->pdfmission)
+                                    <a class="transition duration-500 w-full text-gray-200"
+                                                                                    href="{{ asset('images/projet/'.$realisation->pdfmission)}}"
+                                                                                    target="blank">
+                                        <button
+                                            class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 hover:-translate-y-2 p-2">
 
-                                    <button
-                                        class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 hover:-translate-y-2 p-2">
+                                            Rapport
 
-                                        <a class="transition duration-500 text-gray-200"
-                                            href="{{ asset('images/projet/'.$realisation->pdfmission)}}"
-                                            target="blank">Rapport</a>
-
-                                    </button>
-
+                                        </button>
+                                    </a>
                                     @else
 
                                     <button
@@ -566,10 +577,10 @@ Accueil
 
             <!-- Articles -->
 
-            <div class="grid lg:grid-flow-col lg:grid-cols-2 2xl:grid-cols-3 gap-10 pt-5">
+            <div class="grid lg:grid-flow-rows lg:grid-cols-2 2xl:grid-cols-3 gap-10 pt-5">
 
 
-                @foreach ($realisations as $realisation)
+                @foreach ($veilles as $veille)
 
                 <div data-aos="fade-up">
                     <div
@@ -578,109 +589,40 @@ Accueil
                         <div class="m-5">
 
                             <!-- 1 -->
-                            <div data-aos="fade-down"
-                                class="transition duration-500 py-2 flex justify-center text-gray-800 dark:text-gray-200">
-                                <p class="font-bold lg:text-xl">{{ $realisation->title}}</p>
-
+                            <div data-aos="fade-down">
+                                <div class="transition duration-500 py-2 flex justify-center text-gray-800 dark:text-gray-200">
+                                    <p class="font-bold lg:text-xl">{{ $veille->title}}</p>
+                                </div>
                             </div>
 
                             <!-- 2 -->
                             <div data-aos="fade-up"
                                 class="transition duration-500 py-2 text-justify text-gray-800 dark:text-gray-200">
-                                <p class="transition duration-500 text-indigo-600 dark:text-yellow-500">{{ $realisation->tech}}</p>
+                                <p class="transition duration-500">{{ $veille->body}}</p>
                             </div>
 
                             <!-- 3 -->
-                            <div data-aos="fade-up"
-                                class="transition duration-500 py-2 text-justify text-gray-800 dark:text-gray-200">
-                                <p>{{ $realisation->body}}</p>
-                            </div>
-
-                            <!-- 4 -->
-                            <div class="grid lg:grid-flow-col lg:grid-cols-3 gap-2 py-2">
-
-                                <!-- 1 -->
-                                <div data-aos="fade-right" class="flex justify-center">
-                                    @if ($realisation->link)
+                            <div data-aos="fade-right" class="flex justify-center">
+                                 @if ($veille->link)
+                                 <a class="transition duration-500 w-full text-gray-200"
+                                 href="{{ $veille->link }}" target="blank">
                                     <button
-                                        class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 hover:-translate-y-2 p-2">
-
-                                        <a class="transition duration-500 text-gray-200 inline"
-                                            href="{{ $realisation->link}}" target="blank"><img class="h-5 w-auto inline"
-                                                src="{{ asset('images/icon-logo/gitl.png')}}" alt="">Lien</a>
-
+                                        class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 hover:bg-indigo-800 dark:hover:bg-yellow-500 p-2">
+                                        Lien
                                     </button>
-                                    @else
-                                    <button
-                                        class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 p-2 hover:bg-red-500 dark:hover:bg-red-500">
+                                </a>
+                                 @else
+                                <button
+                                    class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 p-2 hover:bg-red-500 dark:hover:bg-red-500">
 
-                                        <a class="transition duration-500 text-gray-200 inline" target="blank">Lien
-                                        </a>
+                                    <a class="transition duration-500 text-gray-200 inline" target="blank">Lien
+                                    </a>
 
-                                    </button>
-                                    @endif
-                                </div>
-
-                                <!-- 2 -->
-                                <div data-aos="fade-up" class="flex justify-center">
-                                    @if ($realisation->linkgithub)
-                                    <button
-                                        class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 hover:-translate-y-2 p-2">
-
-                                        <a class="transition duration-500 text-gray-200 inline"
-                                            href="{{ $realisation->linkgithub}}" target="blank"><img
-                                                class="h-5 w-auto inline mr-0.5"
-                                                src="{{ asset('images/icon-logo/gitl.png')}}" alt=""><span
-                                                class="hidden 2xl:inline">Github</span><span
-                                                class="2xl:hidden">Git</span></a>
-
-                                    </button>
-                                    @else
-                                    <button
-                                        class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 p-2 hover:bg-red-500 dark:hover:bg-red-500">
-
-                                        <a class="transition duration-500 text-gray-200 inline" target="blank"><img
-                                                class="h-5 w-auto inline mr-0.5"
-                                                src="{{ asset('images/icon-logo/gitl.png')}}" alt=""><span
-                                                class="hidden 2xl:inline">Github</span><span
-                                                class="2xl:hidden">Git</span>
-
-                                        </a>
-
-                                    </button>
-                                    @endif
-                                </div>
-
-                                <!-- 3 -->
-                                <div data-aos="fade-left" class="flex justify-center">
-                                    @if ($realisation->pdfmission)
-
-                                    <button
-                                        class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 hover:-translate-y-2 p-2">
-
-                                        <a class="transition duration-500 text-gray-200"
-                                            href="{{ asset('images/projet/'.$realisation->pdfmission)}}"
-                                            target="blank">Rapport</a>
-
-                                    </button>
-
-                                    @else
-
-                                    <button
-                                        class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 p-2 hover:bg-red-500 dark:hover:bg-red-500">
-
-                                        <a class="transition duration-500 text-gray-200" target="blank">Rapport
-                                        </a>
-
-                                    </button>
-
-                                    @endif
-                                </div>
-
+                                 </button>
+                                 @endif
                             </div>
 
                         </div>
-
                     </div>
                 </div>
 
