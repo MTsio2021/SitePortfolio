@@ -57,7 +57,9 @@ Accueil
         <!-- content -->
         <div class="grid grid-rows-4 grid-cols-2">
             <div class="relative row-span-3 col-span-2 text-center">
-                <h2 class=" transition duration-500 text-xl lg:text-4xl text-gray-700 dark:text-gray-200 font-extrabold">Bienvenue
+                <h2
+                    class=" transition duration-500 text-xl lg:text-4xl text-gray-700 dark:text-gray-200 font-extrabold">
+                    Bienvenue
                     sur
                     mon <span class="transition duration-500 text-indigo-600 dark:text-yellow-500">Portfolio.</span>
                 </h2>
@@ -126,7 +128,7 @@ Accueil
             <div
                 class=" transition duration-500 grid lg:grid-cols-2 py-3 bg-gray-200 shadow-lightSw dark:bg-gray-600 dark:shadow-darkSw border-2 rounded-xl border-gray-700 dark:border-gray-300">
 
-                
+
                 <!-- Photo -->
 
                 <div class="grid grid-flow-row items-center px-2">
@@ -146,7 +148,8 @@ Accueil
                     <div class="">
                         <!-- Title 1  -->
                         <div data-aos="fade-down">
-                            <h5 class="transition duration-500 lg:text-2xl text-indigo-600 dark:text-yellow-500 font-bold">
+                            <h5
+                                class="transition duration-500 lg:text-2xl text-indigo-600 dark:text-yellow-500 font-bold">
                                 Qui suis-je ?
                             </h5>
                         </div>
@@ -154,7 +157,8 @@ Accueil
 
                         <!-- Paragraph 1 -->
                         <div data-aos="fade-right" class="py-6">
-                            <p class="transition duration-500 text-justify text-gray-800 dark:text-gray-200 text-sm lg:text-base">
+                            <p
+                                class="transition duration-500 text-justify text-gray-800 dark:text-gray-200 text-sm lg:text-base">
                                 Je m'appel
                                 <span class="transition duration-500 text-indigo-600 dark:text-yellow-400">Mathieu
                                     Tillier</span>,
@@ -185,7 +189,9 @@ Accueil
 
                         <!-- Paragraph 2  -->
                         <div data-aos="fade-right" class="py-6">
-                            <p class="transition duration-500 text-justify text-gray-800 dark:text-gray-200 text-sm lg:text-base">Je compte
+                            <p
+                                class="transition duration-500 text-justify text-gray-800 dark:text-gray-200 text-sm lg:text-base">
+                                Je compte
                                 poursuivre
                                 mes études après mon BTS, en alternance, en développement dans le domaine du <span
                                     class="transition duration-500 text-indigo-600 dark:text-yellow-400">web.</span>
@@ -200,12 +206,12 @@ Accueil
                                     href="{{ asset('images/cv/cvmat.pdf') }}" target="blank">
 
                                     <button
-                                    class="transition duration-500 w-1/2 transform rounded-xl bg-indigo-600 dark:bg-yellow-600 hover:translate-x-2 p-2 dark:hover:bg-yellow-700 hover:bg-indigo-700">
-                                    Consulter mon CV
+                                        class="transition duration-500 w-1/2 transform rounded-xl bg-indigo-600 dark:bg-yellow-600 hover:translate-x-2 p-2 dark:hover:bg-yellow-700 hover:bg-indigo-700">
+                                        Consulter mon CV
                                     </button>
-                                    
+
                                 </a>
-                                    
+
                             </div>
                         </div>
                         <!-- End Paragraph 2  -->
@@ -246,7 +252,8 @@ Accueil
                     <!-- Title -->
                     <h5
                         class="py-5 text-2xl lg:text-4xl font-bold transition duration-500 text-indigo-600 dark:text-yellow-500">
-                        <span class="hidden 2xl:inline">══ Mon parcours ══</span><span class="inline 2xl:hidden">Parcours</span>
+                        <span class="hidden 2xl:inline">══ Mon parcours ══</span><span
+                            class="inline 2xl:hidden">Parcours</span>
                     </h5>
                     <!-- End Title -->
                 </div>
@@ -284,10 +291,10 @@ Accueil
 
                             <p class="transition duration-500 text-gray-800 dark:text-gray-200">
                                 <span class="text-sm lg:text-xl font-bold">
-                                -
-                                {{ $formation->name }} |
-                                {{ $formation->etablishment }} |
-                                {{ $formation->city }}</span></p>
+                                    -
+                                    {{ $formation->name }} |
+                                    {{ $formation->etablishment }} |
+                                    {{ $formation->city }}</span></p>
 
                             <p class="transition duration-500 text-gray-700 dark:text-gray-200 text-sm">
                                 {{ $formation->date }}</p>
@@ -315,7 +322,8 @@ Accueil
 
                             <h5
                                 class="my-auto lg:text-2xl font-bold transition duration-500 text-indigo-600 dark:text-yellow-500">
-                                <span class="hidden 2xl:inline">Expériences professionnelles</span><span class="inline 2xl:hidden">Expériences pros</span></h5>
+                                <span class="hidden 2xl:inline">Expériences professionnelles</span><span
+                                    class="inline 2xl:hidden">Expériences pros</span></h5>
 
                         </div>
                     </div>
@@ -331,12 +339,14 @@ Accueil
                                 <span class="text-sm lg:text-xl font-bold">
                                     -
                                     {{ $experience->name }} |
-                                    {{ $experience->city }} 
+                                    {{ $experience->city }}
                                 </span>
                             </p>
-                            <p class="transition duration-500 text-gray-700 dark:text-gray-200 text-sm">{{ $experience->date }}</p>
+                            <p class="transition duration-500 text-gray-700 dark:text-gray-200 text-sm">
+                                {{ $experience->date }}</p>
 
-                            <p class="mt-4 transition duration-500 text-gray-700 dark:text-gray-200 text-justify mr-10 text-sm lg:text-xl">
+                            <p
+                                class="mt-4 transition duration-500 text-gray-700 dark:text-gray-200 text-justify mr-10 text-sm lg:text-xl">
                                 {{ $experience->body }}
                             </p>
                         </div>
@@ -377,7 +387,8 @@ Accueil
                     <!-- Title -->
                     <h5
                         class="py-5 text-2xl lg:text-4xl font-bold transition duration-500 text-indigo-600 dark:text-yellow-500">
-                        <span class="hidden 2xl:inline">══ Mes réalisations ══</span><span class="inline 2xl:hidden">Réalisations</span>
+                        <span class="hidden 2xl:inline">══ Mes réalisations ══</span><span
+                            class="inline 2xl:hidden">Réalisations</span>
                     </h5>
                     <!-- End Title -->
                 </div>
@@ -405,20 +416,21 @@ Accueil
                             <!-- 2 -->
                             <div data-aos="fade-down">
                                 <div class="transition duration-500 py-2 flex justify-center">
-                                    <p class="transition duration-500  text-gray-800 dark:text-gray-200">{{ $realisation->title}}</p>
+                                    <p class="transition duration-500  text-gray-800 dark:text-gray-200">
+                                        {{ $realisation->title}}</p>
                                 </div>
                             </div>
 
                             <!-- 3 -->
-                            <div data-aos="fade-up"
-                                class="transition duration-500 py-2 text-justify">
-                                <p class="transition duration-500 text-indigo-600 dark:text-yellow-500">{{ $realisation->tech}}</p>
+                            <div data-aos="fade-up" class="transition duration-500 py-2 text-justify">
+                                <p class="transition duration-500 text-indigo-600 dark:text-yellow-500">
+                                    {{ $realisation->tech}}</p>
                             </div>
 
                             <!-- 4 -->
-                            <div data-aos="fade-up"
-                                class="transition duration-500 py-2 text-justify">
-                                <p class="transition duration-500  text-gray-800 dark:text-gray-200">{{ $realisation->body}}</p>
+                            <div data-aos="fade-up" class="transition duration-500 py-2 text-justify">
+                                <p class="transition duration-500  text-gray-800 dark:text-gray-200">
+                                    {{ $realisation->body}}</p>
                             </div>
 
                             <!-- 5 -->
@@ -429,7 +441,7 @@ Accueil
                                     @if ($realisation->link)
 
                                     <a class="transition duration-500 text-gray-200 w-full"
-                                                                                    href="{{ $realisation->link}}" target="blank">
+                                        href="{{ $realisation->link}}" target="blank">
                                         <button
                                             class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 hover:-translate-y-2 p-2">
 
@@ -453,15 +465,14 @@ Accueil
                                     @if ($realisation->linkgithub)
 
                                     <a class="transition duration-500 text-gray-200 w-full inline"
-                                                                                    href="{{ $realisation->linkgithub}}" target="blank"><img
-                                                                                        class="h-5 w-auto inline mr-0.5"
-                                                                                        src="{{ asset('images/icon-logo/gitl.png')}}" alt="">
+                                        href="{{ $realisation->linkgithub}}" target="blank"><img
+                                            class="h-5 w-auto inline mr-0.5"
+                                            src="{{ asset('images/icon-logo/gitl.png')}}" alt="">
                                         <button
                                             class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 hover:-translate-y-2 p-2">
 
-                                            <span
-                                                    class="hidden 2xl:inline">Github</span><span
-                                                    class="2xl:hidden">Git</span>
+                                            <span class="hidden 2xl:inline">Github</span><span
+                                                class="2xl:hidden">Git</span>
 
                                         </button>
                                     </a>
@@ -485,8 +496,7 @@ Accueil
                                 <div data-aos="fade-left" class="flex justify-center">
                                     @if ($realisation->pdfmission)
                                     <a class="transition duration-500 w-full text-gray-200"
-                                                                                    href="{{ asset('images/projet/'.$realisation->pdfmission)}}"
-                                                                                    target="blank">
+                                        href="{{ asset('images/projet/'.$realisation->pdfmission)}}" target="blank">
                                         <button
                                             class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 hover:-translate-y-2 p-2">
 
@@ -548,7 +558,8 @@ Accueil
                     <!-- Title -->
                     <h5
                         class="py-5 text-2xl lg:text-4xl font-bold transition duration-500 text-indigo-600 dark:text-yellow-500">
-                        <span class="hidden 2xl:inline">══ Ma veille technologique ══</span><span class="inline 2xl:hidden">Veille technologique</span>
+                        <span class="hidden 2xl:inline">══ Ma veille technologique ══</span><span
+                            class="inline 2xl:hidden">Veille technologique</span>
                     </h5>
                     <!-- End Title -->
                 </div>
@@ -556,20 +567,28 @@ Accueil
             <!-- End Header -->
 
             <!-- Presentation -->
-            
+
             <div data-aos="fade-up">
                 <div>
                     <p class="transition duration-500 text-gray-800 dark:text-gray-200 lg:text-xl py-3">
-                        Une veille technologique consiste à se renseigner de <span class="transition duration-500 text-indigo-600 dark:text-yellow-400">façon continue</span>
-                        sur un <span class="transition duration-500 text-indigo-600 dark:text-yellow-400">sujet technologique</span> spécifique.
-                        Pour ma part j'ai choisi comme sujet le <span class="transition duration-500 text-indigo-600 dark:text-yellow-400">langage PHP</span> 
+                        Une veille technologique consiste à se renseigner de <span
+                            class="transition duration-500 text-indigo-600 dark:text-yellow-400">façon continue</span>
+                        sur un <span class="transition duration-500 text-indigo-600 dark:text-yellow-400">sujet
+                            technologique</span> spécifique.
+                        Pour ma part j'ai choisi comme sujet le <span
+                            class="transition duration-500 text-indigo-600 dark:text-yellow-400">langage PHP</span>
                         et tout ce qui est en rapport avec ce dernier comme ses frameworks, mises à jour, IDE, etc...
                     </p>
                     <p class="transition duration-500 text-gray-800 dark:text-gray-200 lg:text-xl py-3">
-                        Pour organiser ma veille, j'ai utilisé l'outil <span class="transition duration-500 text-indigo-600 dark:text-yellow-400">PearlTrees</span>,
-                        afin de regrouper tout les articles que j'ai trouvé intéressant. Pour chercher ces articles, j'ai procédé à des recherches sur PHP un week-end par mois,
-                        tout en triant sur mon moteur de recherche que les résultats datant de moins d'un mois ( Pour ne pas être pollué par les anciens déjà vus ).
-                        Voici le lien de mon <a class="transition duration-500 underline text-indigo-600 dark:text-yellow-400 hover:text-indigo-800 dark:hover:text-yellow-500" href="https://www.pearltrees.com/mtsio2021/php/id39693297">PearlTress</a>.
+                        Pour organiser ma veille, j'ai utilisé l'outil <span
+                            class="transition duration-500 text-indigo-600 dark:text-yellow-400">PearlTrees</span>,
+                        afin de regrouper tout les articles que j'ai trouvé intéressant. Pour chercher ces articles,
+                        j'ai procédé à des recherches sur PHP un week-end par mois,
+                        tout en triant sur mon moteur de recherche que les résultats datant de moins d'un mois ( Pour ne
+                        pas être pollué par les anciens déjà vus ).
+                        Voici le lien de mon <a
+                            class="transition duration-500 underline text-indigo-600 dark:text-yellow-400 hover:text-indigo-800 dark:hover:text-yellow-500"
+                            href="https://www.pearltrees.com/mtsio2021/php/id39693297">PearlTress</a>.
                     </p>
                 </div>
             </div>
@@ -590,7 +609,8 @@ Accueil
 
                             <!-- 1 -->
                             <div data-aos="fade-down">
-                                <div class="transition duration-500 py-2 flex justify-center text-gray-800 dark:text-gray-200">
+                                <div
+                                    class="transition duration-500 py-2 flex justify-center text-gray-800 dark:text-gray-200">
                                     <p class="font-bold lg:text-xl">{{ $veille->title}}</p>
                                 </div>
                             </div>
@@ -603,23 +623,23 @@ Accueil
 
                             <!-- 3 -->
                             <div data-aos="fade-right" class="flex justify-center">
-                                 @if ($veille->link)
-                                 <a class="transition duration-500 w-full text-gray-200"
-                                 href="{{ $veille->link }}" target="blank">
+                                @if ($veille->link)
+                                <a class="transition duration-500 w-full text-gray-200" href="{{ $veille->link }}"
+                                    target="blank">
                                     <button
                                         class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 hover:bg-indigo-800 dark:hover:bg-yellow-500 p-2">
                                         Lien
                                     </button>
                                 </a>
-                                 @else
+                                @else
                                 <button
                                     class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 p-2 hover:bg-red-500 dark:hover:bg-red-500">
 
                                     <a class="transition duration-500 text-gray-200 inline" target="blank">Lien
                                     </a>
 
-                                 </button>
-                                 @endif
+                                </button>
+                                @endif
                             </div>
 
                         </div>
