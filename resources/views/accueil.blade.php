@@ -434,7 +434,7 @@ Accueil
                             </div>
 
                             <!-- 5 -->
-                            <div class="grid xl:grid-flow-col xl:grid-cols-3 gap-2 py-2">
+                            <div class="grid gap-2 py-2">
 
                                 <!-- 1 -->
                                 <div data-aos="fade-right" class="flex justify-center">
@@ -450,13 +450,7 @@ Accueil
                                         </button>
                                     </a>
                                     @else
-                                    <button
-                                        class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 p-2 hover:bg-red-500 dark:hover:bg-red-500">
-
-                                        <a class="transition duration-500 text-gray-200 inline" target="blank">Lien
-                                        </a>
-
-                                    </button>
+                                 
                                     @endif
                                 </div>
 
@@ -477,18 +471,7 @@ Accueil
                                         </button>
                                     </a>
                                     @else
-                                    <button
-                                        class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 p-2 hover:bg-red-500 dark:hover:bg-red-500">
-
-                                        <a class="transition duration-500 text-gray-200 inline" target="blank"><img
-                                                class="h-5 w-auto inline mr-0.5"
-                                                src="{{ asset('images/icon-logo/gitl.png')}}" alt=""><span
-                                                class="hidden 2xl:inline">Github</span><span
-                                                class="2xl:hidden">Git</span>
-
-                                        </a>
-
-                                    </button>
+              
                                     @endif
                                 </div>
 
@@ -506,13 +489,7 @@ Accueil
                                     </a>
                                     @else
 
-                                    <button
-                                        class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 p-2 hover:bg-red-500 dark:hover:bg-red-500">
 
-                                        <a class="transition duration-500 text-gray-200" target="blank">Rapport
-                                        </a>
-
-                                    </button>
 
                                     @endif
                                 </div>
@@ -588,7 +565,17 @@ Accueil
                         pas être pollué par les anciens déjà vus ).
                         Voici le lien de mon <a
                             class="transition duration-500 underline text-indigo-600 dark:text-yellow-400 hover:text-indigo-800 dark:hover:text-yellow-500"
-                            href="https://www.pearltrees.com/mtsio2021/php/id39693297">PearlTress</a>.
+                            href="https://www.pearltrees.com/mtsio2021/php/id39693297">PearlTrees</a>.
+                    </p>
+                    <p class="transition duration-500 text-gray-800 dark:text-gray-200 lg:text-xl py-3">
+                        Lors de mon stage de deuxième année, au sein de l'association Budokan Thiais, j'ai du m'auto-former sur le framework PHP <span
+                        class="transition duration-500 text-indigo-600 dark:text-yellow-400">Laravel</span>, et donc faire une veille sur ce dernier.
+                        Pour apprendre ce framework j'ai utilisé le site web <a
+                        class="transition duration-500 underline text-indigo-600 dark:text-yellow-400 hover:text-indigo-800 dark:hover:text-yellow-500"
+                        href="https://laracasts.com/">Laracasts</a>. Ce site web propose énormément de vidéos explicatives concernant le développement web. Notamment sur Laravel, avec plus de 
+                        611 vidéos réparties en 54 séries à la date du 01 mai 2021. La série dont je me suis le plus aidé tout au long du stage pour apprendre est  <a
+                        class="transition duration-500 underline text-indigo-600 dark:text-yellow-400 hover:text-indigo-800 dark:hover:text-yellow-500"
+                        href="https://laracasts.com/series/laravel-6-from-scratch">celle ci</a>.
                     </p>
                 </div>
             </div>
@@ -651,6 +638,8 @@ Accueil
             </div>
 
             <!-- End Articles -->
+
+
 
         </div>
 
