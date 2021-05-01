@@ -410,7 +410,8 @@ Accueil
 
                             <!-- 1 -->
                             <div data-aos="zoom-in" class="flex justify-center py-2">
-                                <img class="h-52 w-auto" src=" {{ asset('images/projet/'.$realisation->image)}}" alt="">
+                                <img class="h-52 w-auto" src=" {{ asset('images/projet/'.$realisation->image)}}"
+                                    alt="Image">
                             </div>
 
                             <!-- 2 -->
@@ -443,14 +444,14 @@ Accueil
                                     <a class="transition duration-500 text-gray-200 w-full"
                                         href="{{ $realisation->link}}" target="blank">
                                         <button
-                                            class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 hover:-translate-y-2 p-2">
+                                            class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 hover:translate-x-2 p-2">
 
                                             Lien
 
                                         </button>
                                     </a>
                                     @else
-                                 
+
                                     @endif
                                 </div>
 
@@ -459,19 +460,18 @@ Accueil
                                     @if ($realisation->linkgithub)
 
                                     <a class="transition duration-500 text-gray-200 w-full inline"
-                                        href="{{ $realisation->linkgithub}}" target="blank"><img
-                                            class="h-5 w-auto inline mr-0.5"
-                                            src="{{ asset('images/icon-logo/gitl.png')}}" alt="">
+                                        href="{{ $realisation->linkgithub}}" target="blank">
                                         <button
-                                            class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 hover:-translate-y-2 p-2">
-
+                                            class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 hover:translate-x-2 p-2">
+                                            <img class="h-5 w-auto inline mr-0.5"
+                                                src="{{ asset('images/icon-logo/gitl.png')}}" alt="">
                                             <span class="hidden 2xl:inline">Github</span><span
                                                 class="2xl:hidden">Git</span>
 
                                         </button>
                                     </a>
                                     @else
-              
+
                                     @endif
                                 </div>
 
@@ -481,7 +481,7 @@ Accueil
                                     <a class="transition duration-500 w-full text-gray-200"
                                         href="{{ asset('images/projet/'.$realisation->pdfmission)}}" target="blank">
                                         <button
-                                            class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 hover:-translate-y-2 p-2">
+                                            class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 hover:translate-x-2 p-2">
 
                                             Rapport
 
@@ -565,81 +565,95 @@ Accueil
                         pas être pollué par les anciens déjà vus ).
                         Voici le lien de mon <a
                             class="transition duration-500 underline text-indigo-600 dark:text-yellow-400 hover:text-indigo-800 dark:hover:text-yellow-500"
-                            href="https://www.pearltrees.com/mtsio2021/php/id39693297">PearlTrees</a>.
+                            href="https://www.pearltrees.com/mtsio2021/php/id39693297" target="blank">PearlTrees</a>.
+                    </p>
+
+                    <!-- Articles -->
+
+                    <div class="grid lg:grid-flow-rows lg:grid-cols-2 2xl:grid-cols-3 gap-10 pt-5">
+
+
+                        @foreach ($veilles as $veille)
+
+                        <div data-aos="fade-up">
+                            <div
+                                class="transition duration-500 bg-gray-200 py-2 shadow-lightSw dark:bg-gray-600 dark:shadow-darkSw rounded-lg h-full">
+
+                                <div class="m-5">
+
+                                    <!-- 1 -->
+                                    <div data-aos="fade-down">
+                                        <div
+                                            class="transition duration-500 py-2 flex justify-center text-gray-800 dark:text-gray-200">
+                                            <p class="font-bold lg:text-xl">{{ $veille->title}}</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- 2 -->
+                                    <div data-aos="fade-up"
+                                        class="transition duration-500 py-2 text-justify text-gray-800 dark:text-gray-200">
+                                        <p class="transition duration-500">{{ $veille->body}}</p>
+                                    </div>
+
+                                    <!-- 3 -->
+                                    <div data-aos="fade-right" class="flex justify-center">
+                                        @if ($veille->link)
+                                        <a class="transition duration-500 w-full text-gray-200"
+                                            href="{{ $veille->link }}" target="blank">
+                                            <button
+                                                class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 hover:bg-indigo-800 dark:hover:bg-yellow-500 p-2">
+                                                Lien
+                                            </button>
+                                        </a>
+                                        @else
+                                        <button
+                                            class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 p-2 hover:bg-red-500 dark:hover:bg-red-500">
+
+                                            <a class="transition duration-500 text-gray-200 inline" target="blank">Lien
+                                            </a>
+
+                                        </button>
+                                        @endif
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        @endforeach
+
+                    </div>
+
+                    <!-- End Articles -->
+
+                    <br>
+
+                    <p class="transition duration-500 text-gray-800 dark:text-gray-200 lg:text-xl py-3">
+                        Lors de mon stage de deuxième année, au sein de l'association Budokan Thiais, j'ai du
+                        m'auto-former sur le framework PHP <span
+                            class="transition duration-500 text-indigo-600 dark:text-yellow-400">Laravel</span>, et donc
+                        faire une veille sur ce dernier.
+                        Pour apprendre ce framework j'ai utilisé le site web <a
+                            class="transition duration-500 underline text-indigo-600 dark:text-yellow-400 hover:text-indigo-800 dark:hover:text-yellow-500"
+                            href="https://laracasts.com/" target="blank">Laracasts</a>. Ce site web propose énormément
+                        de vidéos
+                        explicatives concernant le développement web. Notamment sur Laravel, avec plus de
+                        611 vidéos réparties en 54 séries à la date du 01 mai 2021. La série dont je me suis le plus
+                        aidé tout au long du stage pour apprendre est <a
+                            class="transition duration-500 underline text-indigo-600 dark:text-yellow-400 hover:text-indigo-800 dark:hover:text-yellow-500"
+                            href="https://laracasts.com/series/laravel-6-from-scratch" target="blank">celle-ci</a>.
                     </p>
                     <p class="transition duration-500 text-gray-800 dark:text-gray-200 lg:text-xl py-3">
-                        Lors de mon stage de deuxième année, au sein de l'association Budokan Thiais, j'ai du m'auto-former sur le framework PHP <span
-                        class="transition duration-500 text-indigo-600 dark:text-yellow-400">Laravel</span>, et donc faire une veille sur ce dernier.
-                        Pour apprendre ce framework j'ai utilisé le site web <a
-                        class="transition duration-500 underline text-indigo-600 dark:text-yellow-400 hover:text-indigo-800 dark:hover:text-yellow-500"
-                        href="https://laracasts.com/">Laracasts</a>. Ce site web propose énormément de vidéos explicatives concernant le développement web. Notamment sur Laravel, avec plus de 
-                        611 vidéos réparties en 54 séries à la date du 01 mai 2021. La série dont je me suis le plus aidé tout au long du stage pour apprendre est  <a
-                        class="transition duration-500 underline text-indigo-600 dark:text-yellow-400 hover:text-indigo-800 dark:hover:text-yellow-500"
-                        href="https://laracasts.com/series/laravel-6-from-scratch">celle ci</a>.
+                        Tout au long du second semestre de deuxième année, je me suis aussi auto-formé sur le framework
+                        CSS
+                        <span class="transition duration-500 text-indigo-600 dark:text-yellow-400">Tailwind CSS</span>.
+                        En savoir plus sur
+                        <a class="transition duration-500 underline text-indigo-600 dark:text-yellow-400 hover:text-indigo-800 dark:hover:text-yellow-500"
+                            href="https://tailwindcss.com/" target="blank">Tailwind CSS</a>.
                     </p>
                 </div>
             </div>
             <!-- End Presentation -->
-
-            <!-- Articles -->
-
-            <div class="grid lg:grid-flow-rows lg:grid-cols-2 2xl:grid-cols-3 gap-10 pt-5">
-
-
-                @foreach ($veilles as $veille)
-
-                <div data-aos="fade-up">
-                    <div
-                        class="transition duration-500 bg-gray-200 py-2 shadow-lightSw dark:bg-gray-600 dark:shadow-darkSw rounded-lg h-full">
-
-                        <div class="m-5">
-
-                            <!-- 1 -->
-                            <div data-aos="fade-down">
-                                <div
-                                    class="transition duration-500 py-2 flex justify-center text-gray-800 dark:text-gray-200">
-                                    <p class="font-bold lg:text-xl">{{ $veille->title}}</p>
-                                </div>
-                            </div>
-
-                            <!-- 2 -->
-                            <div data-aos="fade-up"
-                                class="transition duration-500 py-2 text-justify text-gray-800 dark:text-gray-200">
-                                <p class="transition duration-500">{{ $veille->body}}</p>
-                            </div>
-
-                            <!-- 3 -->
-                            <div data-aos="fade-right" class="flex justify-center">
-                                @if ($veille->link)
-                                <a class="transition duration-500 w-full text-gray-200" href="{{ $veille->link }}"
-                                    target="blank">
-                                    <button
-                                        class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 hover:bg-indigo-800 dark:hover:bg-yellow-500 p-2">
-                                        Lien
-                                    </button>
-                                </a>
-                                @else
-                                <button
-                                    class="transition duration-500 w-full transform rounded-xl bg-indigo-600 dark:bg-yellow-600 p-2 hover:bg-red-500 dark:hover:bg-red-500">
-
-                                    <a class="transition duration-500 text-gray-200 inline" target="blank">Lien
-                                    </a>
-
-                                </button>
-                                @endif
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                @endforeach
-
-            </div>
-
-            <!-- End Articles -->
-
-
 
         </div>
 
